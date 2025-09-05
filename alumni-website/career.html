@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Services - University Alumni Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-blue-600">Alumni Network</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <div class="relative group">
+                            <button class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                                About Us <i class="fas fa-chevron-down ml-1"></i>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <a href="about.html#mission" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Mission & Vision</a>
+                                <a href="about.html#team" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Team</a>
+                                <a href="about.html#gallery" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Gallery</a>
+                                <a href="about.html#news" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">News</a>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <button class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                                Programs & Events <i class="fas fa-chevron-down ml-1"></i>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <a href="events.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Event Calendar</a>
+                                <a href="events.html#registration" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Registration</a>
+                                <a href="events.html#sponsorship" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sponsorship</a>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <button class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                                Alumni Stories <i class="fas fa-chevron-down ml-1"></i>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <a href="stories.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Featured Alumni</a>
+                                <a href="stories.html#submit" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submit Story</a>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <button class="text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                                Career <i class="fas fa-chevron-down ml-1"></i>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <a href="#jobs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Job Listings</a>
+                                <a href="#internships" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Internships</a>
+                                <a href="#training" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Training</a>
+                                <a href="#resume" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Resume Upload</a>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <button class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                                Alumni Portal <i class="fas fa-chevron-down ml-1"></i>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <a href="portal.html#login" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Login</a>
+                                <a href="portal.html#register" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="events.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                <a href="stories.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Alumni Stories</a>
+                <a href="career.html" class="text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Career</a>
+                <a href="portal.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Alumni Portal</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Career Services</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto">Advance your career with our comprehensive job board, training programs, and professional development resources.</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Career Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive support for your professional journey</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-blue-50 rounded-xl hover:shadow-lg transition-shadow duration-300">
+                    <i class="fas fa-briefcase text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Job Listings</h3>
+                    <p class="text-gray-600">Exclusive opportunities from alumni-owned companies and partner organizations</p>
+                </div>
+                
+                <div class="text-center p-6 bg-green-50 rounded-xl hover:shadow-lg transition-shadow duration-300">
+                    <i class="fas fa-graduation-cap text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Internships</h3>
+                    <p class="text-gray-600">Connect students and recent graduates with valuable internship opportunities</p>
+                </div>
+                
+                <div class="text-center p-6 bg-purple-50 rounded-xl hover:shadow-lg transition-shadow duration-300">
+                    <i class="fas fa-chalkboard-teacher text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Training</h3>
+                    <p class="text-gray-600">Professional development workshops and skill-building programs</p>
+                </div>
+                
+                <div class="text-center p-6 bg-orange-50 rounded-xl hover:shadow-lg transition-shadow duration-300">
+                    <i class="fas fa-file-alt text-4xl text-orange-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Resume Services</h3>
+                    <p class="text-gray-600">Upload your resume to our database and get noticed by employers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings Section -->
+    <section id="jobs" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Job Opportunities</h2>
+                <p class="text-xl text-gray-600">Find your next career opportunity</p>
+            </div>
+            
+            <!-- Job Filters -->
+            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div>
+                        <label for="job-category" class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                        <select id="job-category" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            <option value="">All Categories</option>
+                            <option value="technology">Technology</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="finance">Finance</option>
+                            <option value="education">Education</option>
+                            <option value="marketing">Marketing</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="job-location" class="block text-sm font-medium text-gray-700 mb-1">Location</label>
+                        <select id="job-location" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            <option value="">All Locations</option>
+                            <option value="remote">Remote</option>
+                            <option value="new-york">New York</option>
+                            <option value="san-francisco">San Francisco</option>
+                            <option value="chicago">Chicago</option>
+                            <option value="boston">Boston</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="job-type" class="block text-sm font-medium text-gray-700 mb-1">Job Type</label>
+                        <select id="job-type" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            <option value="">All Types</option>
+                            <option value="full-time">Full Time</option>
+                            <option value="part-time">Part Time</option>
+                            <option value="contract">Contract</option>
+                            <option value="freelance">Freelance</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button id="filter-jobs-btn" class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">
+                            <i class="fas fa-search mr-2"></i>Filter Jobs
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="job-listings-container" class="space-y-6">
+                <!-- Job listings will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Internship Opportunities</h2>
+                <p class="text-xl text-gray-600">Gain valuable experience with our partner organizations</p>
+            </div>
+            
+            <div id="internship-listings-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Internship listings will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professional Development</h2>
+                <p class="text-xl text-gray-600">Enhance your skills with our training programs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Training Program 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Leadership Training" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Leadership Excellence</h3>
+                        <p class="text-gray-600 mb-4">Develop essential leadership skills for senior management roles</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-blue-600 font-medium">8 weeks</span>
+                            <span class="text-lg font-bold text-gray-900">$599</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">Enroll Now</button>
+                    </div>
+                </div>
+                
+                <!-- Training Program 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Data Analytics" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Data Analytics Mastery</h3>
+                        <p class="text-gray-600 mb-4">Master data analysis tools and techniques for better decision making</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-blue-600 font-medium">12 weeks</span>
+                            <span class="text-lg font-bold text-gray-900">$899</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">Enroll Now</button>
+                    </div>
+                </div>
+                
+                <!-- Training Program 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Digital Marketing" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Digital Marketing Strategy</h3>
+                        <p class="text-gray-600 mb-4">Learn cutting-edge digital marketing techniques and strategies</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-blue-600 font-medium">6 weeks</span>
+                            <span class="text-lg font-bold text-gray-900">$399</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">Enroll Now</button>
+                    </div>
+                </div>
+                
+                <!-- Training Program 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Financial Planning" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Financial Planning Certification</h3>
+                        <p class="text-gray-600 mb-4">Get certified in financial planning and investment strategies</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-blue-600 font-medium">16 weeks</span>
+                            <span class="text-lg font-bold text-gray-900">$1,299</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">Enroll Now</button>
+                    </div>
+                </div>
+                
+                <!-- Training Program 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Project Management" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Project Management Professional</h3>
+                        <p class="text-gray-600 mb-4">Prepare for PMP certification and advanced project management</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-blue-600 font-medium">10 weeks</span>
+                            <span class="text-lg font-bold text-gray-900">$799</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">Enroll Now</button>
+                    </div>
+                </div>
+                
+                <!-- Training Program 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Communication Skills" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Executive Communication</h3>
+                        <p class="text-gray-600 mb-4">Master presentation, negotiation, and interpersonal communication skills</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-blue-600 font-medium">4 weeks</span>
+                            <span class="text-lg font-bold text-gray-900">$299</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Upload Section -->
+    <section id="resume" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Resume Database</h2>
+                <p class="text-xl text-gray-600">Upload your resume to be discovered by potential employers</p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <form id="resume-upload-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="resume-first-name" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                            <input type="text" id="resume-first-name" name="resume-first-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="resume-last-name" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                            <input type="text" id="resume-last-name" name="resume-last-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="resume-email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" id="resume-email" name="resume-email" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="resume-phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="resume-phone" name="resume-phone" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="resume-graduation-year" class="block text-sm font-medium text-gray-700 mb-2">Graduation Year *</label>
+                            <select id="resume-graduation-year" name="resume-graduation-year" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Select Year</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="resume-degree" class="block text-sm font-medium text-gray-700 mb-2">Degree/Program</label>
+                            <input type="text" id="resume-degree" name="resume-degree" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="e.g., Bachelor of Science in Computer Science">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="resume-experience" class="block text-sm font-medium text-gray-700 mb-2">Years of Experience</label>
+                            <select id="resume-experience" name="resume-experience" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Select Experience</option>
+                                <option value="0-1">0-1 years</option>
+                                <option value="2-5">2-5 years</option>
+                                <option value="6-10">6-10 years</option>
+                                <option value="10+">10+ years</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="resume-salary" class="block text-sm font-medium text-gray-700 mb-2">Expected Salary Range</label>
+                            <select id="resume-salary" name="resume-salary" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Select Range</option>
+                                <option value="30-50k">$30,000 - $50,000</option>
+                                <option value="50-75k">$50,000 - $75,000</option>
+                                <option value="75-100k">$75,000 - $100,000</option>
+                                <option value="100k+">$100,000+</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="resume-skills" class="block text-sm font-medium text-gray-700 mb-2">Key Skills</label>
+                        <textarea id="resume-skills" name="resume-skills" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="List your key skills, separated by commas"></textarea>
+                    </div>
+                    
+                    <div>
+                        <label for="resume-file" class="block text-sm font-medium text-gray-700 mb-2">Upload Resume *</label>
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                            <input type="file" id="resume-file" name="resume-file" accept=".pdf,.doc,.docx" required class="hidden">
+                            <div id="file-drop-area" class="cursor-pointer">
+                                <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+                                <p class="text-gray-600">Click to upload or drag and drop your resume</p>
+                                <p class="text-sm text-gray-500">PDF, DOC, or DOCX (max 5MB)</p>
+                            </div>
+                        </div>
+                        <div id="file-name" class="mt-2 text-sm text-gray-600 hidden"></div>
+                    </div>
+                    
+                    <div>
+                        <label class="flex items-center">
+                            <input type="checkbox" id="resume-consent" name="resume-consent" required class="rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+                            <span class="ml-2 text-sm text-gray-700">
+                                I consent to having my resume shared with potential employers and alumni network partners. *
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label class="flex items-center">
+                            <input type="checkbox" id="resume-contact-consent" name="resume-contact-consent" class="rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+                            <span class="ml-2 text-sm text-gray-700">
+                                I agree to be contacted by employers and recruiters regarding job opportunities.
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Upload Resume</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>123 University Ave, City, State 12345</p>
+                        <p><i class="fas fa-phone mr-2"></i>(555) 123-4567</p>
+                        <p><i class="fas fa-envelope mr-2"></i>alumni@university.edu</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="about.html" class="block text-gray-300 hover:text-white">About Us</a>
+                        <a href="events.html" class="block text-gray-300 hover:text-white">Events</a>
+                        <a href="stories.html" class="block text-gray-300 hover:text-white">Alumni Stories</a>
+                        <a href="career.html" class="block text-gray-300 hover:text-white">Career Services</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Programs</h3>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-gray-300 hover:text-white">Mentorship</a>
+                        <a href="#" class="block text-gray-300 hover:text-white">Professional Development</a>
+                        <a href="#" class="block text-gray-300 hover:text-white">Networking</a>
+                        <a href="#" class="block text-gray-300 hover:text-white">Volunteer Opportunities</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 University Alumni Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
